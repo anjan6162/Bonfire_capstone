@@ -9,7 +9,46 @@ We will develop a sales forecasting model that can accurately predict daily sale
 
 This sales forecasting model will help the company to make informed decisions about staffing, inventory, and marketing for the new stores. This can help the company to maximize its profits and minimize its losses while maintaining customer satisfaction.
 
+## Exploratory Data Analysis (EDA) Key Findings:
+
+### Correlation Analysis:
+The examination of store sales and demographic factors revealed notable correlations. Food service and inside sales demonstrated a high correlation, indicating a tendency for these categories to move in tandem. A moderate correlation was observed between diesel and food service sales, suggesting a positive relationship, albeit not as strong as that between food service and inside sales.
+
+### Day-of-Week Trends:
+Sales analysis across days highlighted significant trends. Sunday emerged as the slowest day, while Friday recorded the highest sales, indicating increased shopping activity on weekends. This insight suggests potential benefits for businesses to offer special promotions or discounts on Fridays. Moreover, holidays exhibited higher average sales, emphasizing the influence of festive occasions on consumer spending.
+
+### Holiday-Specific Insights:
+Christmas and Thanksgiving consistently recorded the highest average sales across all categories, underscoring their significance as peak shopping periods. Conversely, New Year's Day and New Year's Eve marked the lowest average sales, possibly due to a focus on celebratory activities rather than shopping.
+
+### Demographic Factors and Sales Correlation:
+The analysis identified correlations between store sales and demographic factors. Notably, the presence of bonfire_grill and pizza showed a strong positive correlation with food service sales. Additionally, a positive correlation was observed between the employee-to-population ratio and store sales, suggesting potential benefits for businesses located in areas with a higher employee-to-population ratio.
+
+### Seasonal Store Openings:
+A notable observation was the seasonal trend in store openings, with a higher frequency in summer and spring, and comparatively fewer openings in winter.
+
+### Soft Opening Sales Trends:
+Analyzing soft opening dates revealed consistent patterns. Day-2 of soft opening dates consistently recorded higher sales than Day-1 for the majority of stores. Similar trends were observed for week-2 surpassing week-1 and month-2 exceeding month-1 sales, indicating a positive trajectory in sales during initial operational phases.
+
+### Data Preparation for Modeling:
+
+#### Null Value Handling and Data Factorization:
+Before proceeding with model building, data cleaning is imperative. Null values will be addressed, and datasets will be factorized for comprehensive handling. This step ensures a refined dataset for accurate model training.
+
+#### Data Splitting:
+The merged data will be split into training and testing sets using the 70-30 ratio method. This allows for an effective evaluation of model performance on unseen data, ensuring robustness and generalization.
+
+### Modeling Approach:
+
+#### Forecasting Models:
+The forecast models will include Prophet, SARIMA, ARIMA, XGBoosting, and ETS. These models will be implemented based on industry-leading methods. Utilizing insights from EDA, these models will be compared to identify the most promising approach. This comparison will guide the selection of the final dataset and model type for subsequent stages of analysis.
+
+### Continuous Analysis and Refinement:
+
+#### Iterative Progress:
+As the analysis progresses, continuous refinement and revisiting of the business problem will be prioritized. Any identified glitches or discrepancies in the findings will be addressed to ensure the model's accuracy and relevance to Maverik's business objectives.
+
 #### Please see our full EDA and Modeling Notebook by clicking on the link below. You will also find a detailed explanation of our analytical findings.
+
 https://github.com/only2venkat/Bonfire_capstone/blob/3a93c0dd35b2225a96c0a2d9080fa5b937cfe7a0/Model_notebook.ipynb
 
 Time Series Forecasting and Analysis Overview:
